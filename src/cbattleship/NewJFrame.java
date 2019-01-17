@@ -601,184 +601,245 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void ShipEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShipEnterActionPerformed
         
-        //checks all text feilds for inputs then makes it so that you can't edit them
-        if(Afive.getText().equals("x")){
-            Afive.setEditable(false);
-            y[i] = 5;
-            x[i] = 1;
-            i++;
-        }
-        if(Bfive.getText().equals("x")){
-            Bfive.setEditable(false);
-            y[i] = 5;
-            x[i] = 2;
-            i++;
-        }if(Cfive.getText().equals("x")){
-            Cfive.setEditable(false);
-            y[i] = 5;
-            x[i] = 3;
-            i++;
-        }
-        if(Dfive.getText().equals("x")){
-            Dfive.setEditable(false);
-            y[i] = 5;
-            x[i] = 4;
-            i++;
-        }
-        if(Efive.getText().equals("x")){
-            Efive.setEditable(false);
-            y[i] = 5;
-            x[i] = 5;
-            i++;
-        }
-        if(Afour.getText().equals("x")){
-            Afour.setEditable(false);
-            y[i] = 4;
-            x[i] = 1;
-            i++;
-        }
-        if(Bfour.getText().equals("x")){
-            Bfour.setEditable(false);
-            y[i] = 4;
-            x[i] = 2;
-            i++;
-        }if(Cfour.getText().equals("x")){
-            Cfour.setEditable(false);
-            y[i] = 4;
-            x[i] = 3;
-            i++;
-        }
-        if(Dfour.getText().equals("x")){
-            Dfour.setEditable(false);
-            y[i] = 4;
-            x[i] = 4;
-            i++;
-        }
-        if(Efour.getText().equals("x")){
-            Efour.setEditable(false);
-            y[i] = 4;
-            x[i] = 5;
-            i++;
-        }
-        if(Athree.getText().equals("x")){
-            Athree.setEditable(false);
-            y[i] = 3;
-            x[i] = 1;
-            i++;
-        }
-        if(Bthree.getText().equals("x")){
-            Bthree.setEditable(false);
-            y[i] = 3;
-            x[i] = 2;
-            i++;
-        }if(Cthree.getText().equals("x")){
-            Cthree.setEditable(false);
-            y[i] = 3;
-            x[i] = 3;
-            i++;
-        }
-        if(Dthree.getText().equals("x")){
-            Dthree.setEditable(false);
-            y[i] = 3;
-            x[i] = 4;
-            i++;
-        }
-        if(Ethree.getText().equals("x")){
-            Ethree.setEditable(false);
-            y[i] = 3;
-            x[i] = 5;
-            i++;
-        }
-        if(Atwo.getText().equals("x")){
-            Atwo.setEditable(false);
-            y[i] = 2;
-            x[i] = 1;
-            i++;
-        }
-        if(Btwo.getText().equals("x")){
-            Btwo.setEditable(false);
-            y[i] = 2;
-            x[i] = 2;
-            i++;
-        }if(Ctwo.getText().equals("x")){
-            Ctwo.setEditable(false);
-            y[i] = 2;
-            x[i] = 3;
-            i++;
-        }
-        if(Dtwo.getText().equals("x")){
-            Dtwo.setEditable(false);
-            y[i] = 2;
-            x[i] = 4;
-            i++;
-        }
-        if(Etwo.getText().equals("x")){
-            Etwo.setEditable(false);
-            y[i] = 2;
-            x[i] = 5;
-            i++;
-        }
-        if(Aone.getText().equals("x")){
-            Aone.setEditable(false);
-            y[i] = 1;
-            x[i] = 1;
-            i++;
-        }
-        if(Bone.getText().equals("x")){
-            Bone.setEditable(false);
-            y[i] = 1;
-            x[i] = 2;
-            i++;
-        }if(Cone.getText().equals("x")){
-            Cone.setEditable(false);
-            y[i] = 1;
-            x[i] = 3;
-            i++;
-        }
-        if(Done.getText().equals("x")){
-            Done.setEditable(false);
-            y[i] = 1;
-            x[i] = 4;
-            i++;
-        }
-        if(Eone.getText().equals("x")){
-            Eone.setEditable(false);
-            y[i] = 1;
-            x[i] = 5;
-            i++;
-        }
-        //makes it so you cant edit the text feilds that display your ship placement.
-        Eone.setEditable(false);
-        Done.setEditable(false);
-        Cone.setEditable(false);
-        Bone.setEditable(false);
-        Aone.setEditable(false);
+       
+            //checks all text feilds for inputs then makes it so that you can't edit them
+            
+            if(Afive.getText().equals("x")){
+                Afive.setEditable(false);
+                y[i] = 5;
+                x[i] = 1;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Bfive.getText().equals("x")){
+                Bfive.setEditable(false);
+                y[i] = 5;
+                x[i] = 2;       
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Cfive.getText().equals("x")){
+                
+                Cfive.setEditable(false);
+                y[i] = 5;
+                x[i] = 3;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Dfive.getText().equals("x")){
+                Dfive.setEditable(false);
+                y[i] = 5;
+                x[i] = 4;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Efive.getText().equals("x")){
+                Efive.setEditable(false);
+                y[i] = 5;
+                x[i] = 5;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Afour.getText().equals("x")){
+                Afour.setEditable(false);
+                y[i] = 4;
+                x[i] = 1;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Bfour.getText().equals("x")){
+                Bfour.setEditable(false);
+                y[i] = 4;
+                x[i] = 2;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Cfour.getText().equals("x")){
+                Cfour.setEditable(false);
+                y[i] = 4;
+                x[i] = 3;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Dfour.getText().equals("x")){
+                Dfour.setEditable(false);
+                y[i] = 4;
+                x[i] = 4;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Efour.getText().equals("x")){
+                Efour.setEditable(false);
+                y[i] = 4;
+                x[i] = 5;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Athree.getText().equals("x")){
+                Athree.setEditable(false);
+                y[i] = 3;
+                x[i] = 1;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Bthree.getText().equals("x")){
+                Bthree.setEditable(false);
+                y[i] = 3;
+                x[i] = 2;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Cthree.getText().equals("x")){
+                Cthree.setEditable(false);
+                y[i] = 3;
+                x[i] = 3;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Dthree.getText().equals("x")){
+                Dthree.setEditable(false);
+                y[i] = 3;
+                x[i] = 4;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Ethree.getText().equals("x")){
+                Ethree.setEditable(false);
+                y[i] = 3;
+                x[i] = 5;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Atwo.getText().equals("x")){
+                Atwo.setEditable(false);
+                y[i] = 2;
+                x[i] = 1;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Btwo.getText().equals("x")){
+                Btwo.setEditable(false);
+                y[i] = 2;
+                x[i] = 2;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Ctwo.getText().equals("x")){
+                Ctwo.setEditable(false);
+                y[i] = 2;
+                x[i] = 3;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Dtwo.getText().equals("x")){
+                Dtwo.setEditable(false);
+                y[i] = 2;
+                x[i] = 4;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Etwo.getText().equals("x")){
+                Etwo.setEditable(false);  
+                y[i] = 2;
+                x[i] = 5;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Aone.getText().equals("x")){
+                Aone.setEditable(false);
+                y[i] = 1;
+                x[i] = 1;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Bone.getText().equals("x")){
+                Bone.setEditable(false);
+                y[i] = 1;
+                x[i] = 2;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Cone.getText().equals("x")){
+                Cone.setEditable(false);
+                y[i] = 1;
+                x[i] = 3;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Done.getText().equals("x")){
+                Done.setEditable(false);
+                y[i] = 1;
+                x[i] = 4;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            if(Eone.getText().equals("x")){
+                Eone.setEditable(false);
+                y[i] = 1;
+                x[i] = 5;
+                i++;
+            }
+            if(i>=5){
+                noEdit();
+            }
+            //makes it so you cant edit the text feilds that display your ship placement.
+            noEdit();
+            
+            
         
-        Etwo.setEditable(false);
-        Dtwo.setEditable(false);
-        Ctwo.setEditable(false);
-        Btwo.setEditable(false);
-        Atwo.setEditable(false);
-        
-        Ethree.setEditable(false);
-        Dthree.setEditable(false);
-        Cthree.setEditable(false);
-        Bthree.setEditable(false);
-        Athree.setEditable(false);
-        
-        Efour.setEditable(false);
-        Dfour.setEditable(false);
-        Cfour.setEditable(false);
-        Bfour.setEditable(false);
-        Afour.setEditable(false);
-        
-        Efive.setEditable(false);
-        Dfive.setEditable(false);
-        Cfive.setEditable(false);
-        Bfive.setEditable(false);
-        Afive.setEditable(false);
-        
-        
+      
+       
+           
+             
+
         
         
         
@@ -786,7 +847,38 @@ public class NewJFrame extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_ShipEnterActionPerformed
+    
+    public void noEdit(){
+        Eone.setEditable(false);
+            Done.setEditable(false);
+            Cone.setEditable(false);
+            Bone.setEditable(false);
+            Aone.setEditable(false);
 
+            Etwo.setEditable(false);
+            Dtwo.setEditable(false);
+            Ctwo.setEditable(false);
+            Btwo.setEditable(false);
+            Atwo.setEditable(false);
+
+            Ethree.setEditable(false);
+            Dthree.setEditable(false);
+            Cthree.setEditable(false);
+            Bthree.setEditable(false);
+            Athree.setEditable(false);
+
+            Efour.setEditable(false);
+            Dfour.setEditable(false);
+            Cfour.setEditable(false);
+            Bfour.setEditable(false);
+            Afour.setEditable(false);
+
+            Efive.setEditable(false);
+            Dfive.setEditable(false);
+            Cfive.setEditable(false);
+            Bfive.setEditable(false);
+            Afive.setEditable(false);
+    }
     /**
      * @param args the command line arguments
      */
