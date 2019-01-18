@@ -1,4 +1,4 @@
-/*
+/**
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -109,6 +109,12 @@ public class NewJFrame extends javax.swing.JFrame {
         ShipEnter = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Efive.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EfiveActionPerformed(evt);
+            }
+        });
 
         B5.setEditable(false);
 
@@ -579,6 +585,10 @@ public class NewJFrame extends javax.swing.JFrame {
     int []y  = new int [6];
     int []x = new int[6];
     int i = 0;
+    
+   
+   
+    
     private void B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_B3ActionPerformed
@@ -612,6 +622,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Bfive.getText().equals("x")){
                 Bfive.setEditable(false);
@@ -621,6 +632,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Cfive.getText().equals("x")){
                 
@@ -631,6 +643,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Dfive.getText().equals("x")){
                 Dfive.setEditable(false);
@@ -639,7 +652,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Efive.getText().equals("x")){
                 Efive.setEditable(false);
@@ -649,6 +663,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Afour.getText().equals("x")){
                 Afour.setEditable(false);
@@ -657,7 +672,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Bfour.getText().equals("x")){
                 Bfour.setEditable(false);
@@ -667,6 +683,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Cfour.getText().equals("x")){
                 Cfour.setEditable(false);
@@ -675,7 +692,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Dfour.getText().equals("x")){
                 Dfour.setEditable(false);
@@ -684,7 +702,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Efour.getText().equals("x")){
                 Efour.setEditable(false);
@@ -694,7 +713,9 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
+            
             if(Athree.getText().equals("x")){
                 Athree.setEditable(false);
                 y[i] = 3;
@@ -703,6 +724,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Bthree.getText().equals("x")){
                 Bthree.setEditable(false);
@@ -712,6 +734,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Cthree.getText().equals("x")){
                 Cthree.setEditable(false);
@@ -721,6 +744,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Dthree.getText().equals("x")){
                 Dthree.setEditable(false);
@@ -730,6 +754,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Ethree.getText().equals("x")){
                 Ethree.setEditable(false);
@@ -739,6 +764,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Atwo.getText().equals("x")){
                 Atwo.setEditable(false);
@@ -748,6 +774,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Btwo.getText().equals("x")){
                 Btwo.setEditable(false);
@@ -756,7 +783,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Ctwo.getText().equals("x")){
                 Ctwo.setEditable(false);
@@ -766,7 +794,10 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
+            
+            //this is line 800 of this program...very cool, surely this is epic
             if(Dtwo.getText().equals("x")){
                 Dtwo.setEditable(false);
                 y[i] = 2;
@@ -775,6 +806,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Etwo.getText().equals("x")){
                 Etwo.setEditable(false);  
@@ -783,7 +815,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Aone.getText().equals("x")){
                 Aone.setEditable(false);
@@ -793,6 +826,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Bone.getText().equals("x")){
                 Bone.setEditable(false);
@@ -801,7 +835,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Cone.getText().equals("x")){
                 Cone.setEditable(false);
@@ -811,6 +846,7 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
             if(Done.getText().equals("x")){
                 Done.setEditable(false);
@@ -819,7 +855,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 i++;
             }
             if(i>=5){
-                noEdit();
+                noEdit(); 
+                clearAndReplace();
             }
             if(Eone.getText().equals("x")){
                 Eone.setEditable(false);
@@ -829,7 +866,11 @@ public class NewJFrame extends javax.swing.JFrame {
             }
             if(i>=5){
                 noEdit();
+                clearAndReplace();
             }
+            
+            
+            
             //makes it so you cant edit the text feilds that display your ship placement.
             noEdit();
             
@@ -847,6 +888,10 @@ public class NewJFrame extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_ShipEnterActionPerformed
+
+    private void EfiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EfiveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EfiveActionPerformed
     
     public void noEdit(){
         Eone.setEditable(false);
@@ -878,6 +923,142 @@ public class NewJFrame extends javax.swing.JFrame {
             Cfive.setEditable(false);
             Bfive.setEditable(false);
             Afive.setEditable(false);
+    }
+    
+    public void clearAndReplace(){
+        Eone.setText("");
+        Done.setText("");
+        Cone.setText("");
+        Bone.setText("");
+        Aone.setText("");
+        Etwo.setText("");
+        Dtwo.setText("");
+        Ctwo.setText("");
+        Btwo.setText("");
+        Atwo.setText("");
+        Ethree.setText("");
+        Dthree.setText("");
+        Cthree.setText("");
+        Bthree.setText("");
+        Athree.setText("");
+        Efour.setText("");
+        Dfour.setText("");
+        Cfour.setText("");
+        Bfour.setText("");
+        Afour.setText("");
+        Efive.setText("");
+        Dfive.setText("");
+        Cfive.setText("");
+        Bfive.setText("");
+        Afive.setText("");
+        int c = 0;
+        
+        
+        if(x[c] == 1 && y[c] == 5){
+           Afive.setText("x");
+           c++;
+        }
+        if(x[c] == 2 && y[c] == 5){
+           Bfive.setText("x");
+           c++;
+        }
+        if(x[c] == 3 && y[c] == 5){
+           Cfive.setText("x");
+           c++;
+        }
+        if(x[c] == 4 && y[c] == 5){
+           Dfive.setText("x");
+           c++;
+        }
+        if(x[c] == 5 && y[c] == 5){
+           Efive.setText("x");
+           c++;
+        }
+        if(x[c] == 1 && y[c] == 4){
+           Afour.setText("x");
+           c++;
+        }
+        if(x[c] == 2 && y[c] == 4){
+           Bfour.setText("x");
+           c++;
+        }
+        if(x[c] == 3 && y[c] == 4){
+           Cfour.setText("x");
+           c++;
+        }
+        if(x[c] == 4 && y[c] == 4){
+           Dfour.setText("x");
+           c++;
+        }
+        if(x[c] == 5 && y[c] == 4){
+           Efour.setText("x");
+           c++;
+        }
+        if(x[c] == 1 && y[c] == 3){
+           Athree.setText("x");
+           c++;
+        }
+        if(x[c] == 2 && y[c] == 3){
+           Bthree.setText("x");
+           c++;
+        }
+        if(x[c] == 3 && y[c] == 3){
+           Cthree.setText("x");
+           c++;
+        }
+        if(x[c] == 4 && y[c] == 3){
+           Dthree.setText("x");
+           c++;
+        }
+        if(x[c] == 5 && y[c] == 3){
+           Ethree.setText("x");
+           c++;
+        }
+        if(x[c] == 1 && y[c] == 2){
+           Atwo.setText("x");
+           c++;
+        }
+        if(x[c] == 2 && y[c] == 2){
+           Btwo.setText("x");
+           c++;
+        }
+        if(x[c] == 3 && y[c] == 2){
+           Ctwo.setText("x");
+           c++;
+        }
+        if(x[c] == 4 && y[c] == 2){
+           Dtwo.setText("x");
+           c++;
+        }
+        if(x[c] == 5 && y[c] == 2){
+           Etwo.setText("x");
+           c++;
+        }
+        if(x[c] == 1 && y[c] == 1){
+           Aone.setText("x");
+           c++;
+        }
+        if(x[c] == 2 && y[c] == 1){
+           Bone.setText("x");
+           c++;
+        }
+        if(x[c] == 3 && y[c] == 1){
+           Cone.setText("x");
+           c++;
+        }
+        if(x[c] == 4 && y[c] == 1){
+           Done.setText("x");
+           c++;
+        }
+        if(x[c] == 5 && y[c] == 1){
+           Eone.setText("x");
+           c++;
+        }
+        
+        
+        
+
+            
     }
     /**
      * @param args the command line arguments
