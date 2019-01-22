@@ -1,8 +1,8 @@
-/**
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//*
+ //* To change this license header, choose License Headers in Project Properties.
+ //* To change this template file, choose Tools | Templates
+ //* and open the template in the editor.
+ //*/
 
 /**
  *
@@ -27,232 +27,37 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Cfive = new javax.swing.JTextField();
-        Dfive = new javax.swing.JTextField();
-        Efive = new javax.swing.JTextField();
-        Afour = new javax.swing.JTextField();
-        Bfour = new javax.swing.JTextField();
-        Cfour = new javax.swing.JTextField();
-        Dfour = new javax.swing.JTextField();
-        Efour = new javax.swing.JTextField();
-        Athree = new javax.swing.JTextField();
-        Bthree = new javax.swing.JTextField();
-        Cthree = new javax.swing.JTextField();
-        B5 = new javax.swing.JTextField();
-        D5 = new javax.swing.JTextField();
-        E5 = new javax.swing.JTextField();
-        Dthree = new javax.swing.JTextField();
-        A4 = new javax.swing.JTextField();
-        Ethree = new javax.swing.JTextField();
-        B4 = new javax.swing.JTextField();
-        Atwo = new javax.swing.JTextField();
-        C4 = new javax.swing.JTextField();
-        Btwo = new javax.swing.JTextField();
-        D4 = new javax.swing.JTextField();
-        Ctwo = new javax.swing.JTextField();
-        E4 = new javax.swing.JTextField();
-        A3 = new javax.swing.JTextField();
-        B3 = new javax.swing.JTextField();
-        C3 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        A5 = new javax.swing.JTextField();
-        C5 = new javax.swing.JTextField();
-        Dtwo = new javax.swing.JTextField();
-        Etwo = new javax.swing.JTextField();
-        Aone = new javax.swing.JTextField();
-        Bone = new javax.swing.JTextField();
-        D3 = new javax.swing.JTextField();
-        Cone = new javax.swing.JTextField();
-        E3 = new javax.swing.JTextField();
-        Done = new javax.swing.JTextField();
-        A2 = new javax.swing.JTextField();
-        Eone = new javax.swing.JTextField();
-        B2 = new javax.swing.JTextField();
-        Eh = new javax.swing.JLabel();
-        C2 = new javax.swing.JTextField();
-        Bee = new javax.swing.JLabel();
-        D2 = new javax.swing.JTextField();
-        See = new javax.swing.JLabel();
-        E2 = new javax.swing.JTextField();
-        A1 = new javax.swing.JTextField();
-        B1 = new javax.swing.JTextField();
-        C1 = new javax.swing.JTextField();
-        Dee = new javax.swing.JLabel();
-        Eee = new javax.swing.JLabel();
-        uno = new javax.swing.JLabel();
-        dos = new javax.swing.JLabel();
-        D1 = new javax.swing.JTextField();
-        tres = new javax.swing.JLabel();
-        E1 = new javax.swing.JTextField();
-        cuatro = new javax.swing.JLabel();
-        A = new javax.swing.JLabel();
-        cinco = new javax.swing.JLabel();
-        B = new javax.swing.JLabel();
-        HitOrMiss = new javax.swing.JLabel();
-        C = new javax.swing.JLabel();
-        ShipPlacement = new javax.swing.JLabel();
-        D = new javax.swing.JLabel();
-        E = new javax.swing.JLabel();
-        one = new javax.swing.JLabel();
-        two = new javax.swing.JLabel();
-        three = new javax.swing.JLabel();
-        four = new javax.swing.JLabel();
-        five = new javax.swing.JLabel();
-        Afive = new javax.swing.JTextField();
-        Bfive = new javax.swing.JTextField();
-        LetterIn = new javax.swing.JTextField();
-        NumIn = new javax.swing.JTextField();
+        row = new javax.swing.JTextField();
+        column = new javax.swing.JTextField();
         ShotPrompt = new javax.swing.JLabel();
         Letter = new javax.swing.JLabel();
         Number = new javax.swing.JLabel();
         Fire = new javax.swing.JButton();
-        ShipEnter = new javax.swing.JButton();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        numShots = new javax.swing.JLabel();
+        ammoCount = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        misses = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        hits = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Efive.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EfiveActionPerformed(evt);
-            }
-        });
-
-        B5.setEditable(false);
-
-        D5.setEditable(false);
-
-        E5.setEditable(false);
-
-        A4.setEditable(false);
-
-        B4.setEditable(false);
-
-        C4.setEditable(false);
-
-        D4.setEditable(false);
-
-        E4.setEditable(false);
-
-        A3.setEditable(false);
-
-        B3.setEditable(false);
-        B3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                B3ActionPerformed(evt);
-            }
-        });
-
-        C3.setEditable(false);
-
         jLabel1.setFont(new java.awt.Font("Borg 9", 0, 48)); // NOI18N
-        jLabel1.setText("BAttleship");
+        jLabel1.setText("BomberCommand");
 
-        A5.setEditable(false);
-
-        C5.setEditable(false);
-
-        D3.setEditable(false);
-
-        E3.setEditable(false);
-
-        A2.setEditable(false);
-
-        B2.setEditable(false);
-
-        Eh.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Eh.setText("A");
-
-        C2.setEditable(false);
-
-        Bee.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Bee.setText("B");
-
-        D2.setEditable(false);
-
-        See.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        See.setText("C");
-
-        E2.setEditable(false);
-
-        A1.setEditable(false);
-
-        B1.setEditable(false);
-
-        C1.setEditable(false);
-
-        Dee.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Dee.setText("D");
-
-        Eee.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        Eee.setText("E");
-
-        uno.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        uno.setText("1");
-
-        dos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        dos.setText("2");
-
-        D1.setEditable(false);
-
-        tres.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        tres.setText("3");
-
-        E1.setEditable(false);
-
-        cuatro.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cuatro.setText("4");
-
-        A.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        A.setText("A");
-
-        cinco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cinco.setText("5");
-
-        B.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        B.setText("B");
-
-        HitOrMiss.setText("Hits and Misses");
-
-        C.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        C.setText("C");
-
-        ShipPlacement.setText("Your ship placement");
-
-        D.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        D.setText("D");
-
-        E.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        E.setText("E");
-
-        one.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        one.setText("1");
-
-        two.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        two.setText("2");
-
-        three.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        three.setText("3");
-
-        four.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        four.setText("4");
-
-        five.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        five.setText("5");
-
-        Bfive.addActionListener(new java.awt.event.ActionListener() {
+        row.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BfiveActionPerformed(evt);
+                rowActionPerformed(evt);
             }
         });
 
-        LetterIn.addActionListener(new java.awt.event.ActionListener() {
+        column.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LetterInActionPerformed(evt);
-            }
-        });
-
-        NumIn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NumInActionPerformed(evt);
+                columnActionPerformed(evt);
             }
         });
 
@@ -269,175 +74,50 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        ShipEnter.setText("Enter Ship Placement");
-        ShipEnter.addActionListener(new java.awt.event.ActionListener() {
+        jToggleButton1.setText("jToggleButton1");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ShipEnterActionPerformed(evt);
+                jToggleButton1ActionPerformed(evt);
             }
         });
+
+        numShots.setText("Number of Shots:");
+
+        jLabel2.setText("Hits");
+
+        jLabel4.setText("Misses");
+
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        misses.setColumns(20);
+        misses.setRows(5);
+        jScrollPane1.setViewportView(misses);
+
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        hits.setColumns(20);
+        hits.setRows(5);
+        jScrollPane2.setViewportView(hits);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(57, 57, 57))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(HitOrMiss)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(uno)
-                                        .addComponent(dos)
-                                        .addComponent(tres))
-                                    .addComponent(cinco, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(cuatro, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Aone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Bone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Cone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Done, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Eone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Atwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Btwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Ctwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Dtwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Etwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Athree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Bthree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Cthree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Dthree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Ethree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Afour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Bfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Cfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Dfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Efour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Afive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Bfive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Cfive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Dfive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Efive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(19, 19, 19)
-                                        .addComponent(Eh)
-                                        .addGap(52, 52, 52)
-                                        .addComponent(Bee)
-                                        .addGap(49, 49, 49)
-                                        .addComponent(See)
-                                        .addGap(47, 47, 47)
-                                        .addComponent(Dee)
-                                        .addGap(48, 48, 48)
-                                        .addComponent(Eee))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(two)
-                                        .addComponent(three))
-                                    .addComponent(five, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(four, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(A2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(C2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(D2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(E2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(A3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(B3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(C3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(D3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(E3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(A4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(B4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(C4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(D4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(E4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(A5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(C5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(D5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(E5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(one)
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(A1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(C1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(D1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(E1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(19, 19, 19)
-                                            .addComponent(A)
-                                            .addGap(52, 52, 52)
-                                            .addComponent(B)
-                                            .addGap(49, 49, 49)
-                                            .addComponent(C)
-                                            .addGap(47, 47, 47)
-                                            .addComponent(D)
-                                            .addGap(48, 48, 48)
-                                            .addComponent(E))))
-                                .addComponent(ShipPlacement, javax.swing.GroupLayout.Alignment.LEADING)))
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
+                                .addComponent(jLabel4)
+                                .addGap(70, 70, 70))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(29, 29, 29)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(45, 45, 45)
@@ -445,140 +125,74 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addComponent(ShotPrompt, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(LetterIn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(row, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(Letter))
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(Number)
-                                            .addComponent(NumIn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(column, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(Fire)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(ShipEnter)))))
+                                .addGap(28, 28, 28)
+                                .addComponent(jToggleButton1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(ammoCount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(numShots, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE))
+                                .addGap(64, 64, 64))))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(22, 22, 22)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(413, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(HitOrMiss)
+                .addComponent(jLabel1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(A5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(B5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(D5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(E5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(five))
+                        .addGap(4, 4, 4)
+                        .addComponent(jToggleButton1))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(A4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(B4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(D4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(E4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(four))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(A3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(B3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(D3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(E3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(three))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(A2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(B2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(D2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(E2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(two))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(A1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(B1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(C1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(D1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(E1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(one))
-                        .addGap(8, 8, 8)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(A)
-                            .addComponent(B)
-                            .addComponent(C)
-                            .addComponent(D)
-                            .addComponent(E))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ShipPlacement)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Afive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Bfive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cfive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Dfive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Efive, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cinco))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Afour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Bfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Dfour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Efour, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cuatro))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Athree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Bthree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cthree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Dthree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Ethree, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tres))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Atwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Btwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Ctwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Dtwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Etwo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(dos))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Aone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Bone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Done, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Eone, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(uno))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Eh)
-                            .addComponent(Bee)
-                            .addComponent(See)
-                            .addComponent(Dee)
-                            .addComponent(Eee))
-                        .addContainerGap(35, Short.MAX_VALUE))
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(ShotPrompt)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(LetterIn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(NumIn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(row, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(column, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Letter)
                             .addComponent(Number))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Fire)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ShipEnter)
-                        .addGap(84, 84, 84))))
+                        .addGap(31, 31, 31)
+                        .addComponent(numShots, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ammoCount, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(198, Short.MAX_VALUE))))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(103, 103, 103)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(197, Short.MAX_VALUE)))
         );
+
+        jLabel1.getAccessibleContext().setAccessibleName("Bomber Command");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -589,476 +203,108 @@ public class NewJFrame extends javax.swing.JFrame {
    
    
     
-    private void B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B3ActionPerformed
+    private void rowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rowActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_B3ActionPerformed
+    }//GEN-LAST:event_rowActionPerformed
 
-    private void BfiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BfiveActionPerformed
+    private void columnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_columnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BfiveActionPerformed
-
-    private void LetterInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LetterInActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_LetterInActionPerformed
-
-    private void NumInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumInActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NumInActionPerformed
+    }//GEN-LAST:event_columnActionPerformed
 
     private void FireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FireActionPerformed
         // TODO add your handling code here:
+        String rowIn = row.getText();
+        int row  = Integer.parseInt(rowIn);
+        String columnIn = column.getText();
+        int column = Integer.parseInt(columnIn);
+        String hitPlaces = "";
+        String missedPlaces = "";
+        
+        if(location[row][column] == 1){
+            
+            hitPlaces = hitPlaces+"\n"+ row+", "+column+"\n";
+            hits.append(hitPlaces);
+        
+        }
+        else{
+            missedPlaces  = missedPlaces+"\n" +row+", "+column+"\n";
+            misses.append(missedPlaces);
+            
+        }
+        
+        
+        
+        
     }//GEN-LAST:event_FireActionPerformed
 
-    private void ShipEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShipEnterActionPerformed
-        
-       
-            //checks all text feilds for inputs then makes it so that you can't edit them
-            
-            if(Afive.getText().equals("x")){
-                Afive.setEditable(false);
-                y[i] = 5;
-                x[i] = 1;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Bfive.getText().equals("x")){
-                Bfive.setEditable(false);
-                y[i] = 5;
-                x[i] = 2;       
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Cfive.getText().equals("x")){
-                
-                Cfive.setEditable(false);
-                y[i] = 5;
-                x[i] = 3;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Dfive.getText().equals("x")){
-                Dfive.setEditable(false);
-                y[i] = 5;
-                x[i] = 4;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Efive.getText().equals("x")){
-                Efive.setEditable(false);
-                y[i] = 5;
-                x[i] = 5;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Afour.getText().equals("x")){
-                Afour.setEditable(false);
-                y[i] = 4;
-                x[i] = 1;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Bfour.getText().equals("x")){
-                Bfour.setEditable(false);
-                y[i] = 4;
-                x[i] = 2;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Cfour.getText().equals("x")){
-                Cfour.setEditable(false);
-                y[i] = 4;
-                x[i] = 3;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Dfour.getText().equals("x")){
-                Dfour.setEditable(false);
-                y[i] = 4;
-                x[i] = 4;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Efour.getText().equals("x")){
-                Efour.setEditable(false);
-                y[i] = 4;
-                x[i] = 5;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            
-            if(Athree.getText().equals("x")){
-                Athree.setEditable(false);
-                y[i] = 3;
-                x[i] = 1;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Bthree.getText().equals("x")){
-                Bthree.setEditable(false);
-                y[i] = 3;
-                x[i] = 2;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Cthree.getText().equals("x")){
-                Cthree.setEditable(false);
-                y[i] = 3;
-                x[i] = 3;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Dthree.getText().equals("x")){
-                Dthree.setEditable(false);
-                y[i] = 3;
-                x[i] = 4;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Ethree.getText().equals("x")){
-                Ethree.setEditable(false);
-                y[i] = 3;
-                x[i] = 5;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Atwo.getText().equals("x")){
-                Atwo.setEditable(false);
-                y[i] = 2;
-                x[i] = 1;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Btwo.getText().equals("x")){
-                Btwo.setEditable(false);
-                y[i] = 2;
-                x[i] = 2;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Ctwo.getText().equals("x")){
-                Ctwo.setEditable(false);
-                y[i] = 2;
-                x[i] = 3;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            
-            //this is line 800 of this program...very cool, surely this is epic
-            if(Dtwo.getText().equals("x")){
-                Dtwo.setEditable(false);
-                y[i] = 2;
-                x[i] = 4;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Etwo.getText().equals("x")){
-                Etwo.setEditable(false);  
-                y[i] = 2;
-                x[i] = 5;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Aone.getText().equals("x")){
-                Aone.setEditable(false);
-                y[i] = 1;
-                x[i] = 1;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Bone.getText().equals("x")){
-                Bone.setEditable(false);
-                y[i] = 1;
-                x[i] = 2;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Cone.getText().equals("x")){
-                Cone.setEditable(false);
-                y[i] = 1;
-                x[i] = 3;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            if(Done.getText().equals("x")){
-                Done.setEditable(false);
-                y[i] = 1;
-                x[i] = 4;
-                i++;
-            }
-            if(i>=5){
-                noEdit(); 
-                clearAndReplace();
-            }
-            if(Eone.getText().equals("x")){
-                Eone.setEditable(false);
-                y[i] = 1;
-                x[i] = 5;
-                i++;
-            }
-            if(i>=5){
-                noEdit();
-                clearAndReplace();
-            }
-            
-            
-            
-            //makes it so you cant edit the text feilds that display your ship placement.
-            noEdit();
-            
-            
-        
-      
-       
-           
-             
-
-        
-        
-        
-        
-        
-        
-    }//GEN-LAST:event_ShipEnterActionPerformed
-
-    private void EfiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EfiveActionPerformed
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_EfiveActionPerformed
+        emptyGrid();
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
     
-    public void noEdit(){
-        Eone.setEditable(false);
-            Done.setEditable(false);
-            Cone.setEditable(false);
-            Bone.setEditable(false);
-            Aone.setEditable(false);
 
-            Etwo.setEditable(false);
-            Dtwo.setEditable(false);
-            Ctwo.setEditable(false);
-            Btwo.setEditable(false);
-            Atwo.setEditable(false);
 
-            Ethree.setEditable(false);
-            Dthree.setEditable(false);
-            Cthree.setEditable(false);
-            Bthree.setEditable(false);
-            Athree.setEditable(false);
-
-            Efour.setEditable(false);
-            Dfour.setEditable(false);
-            Cfour.setEditable(false);
-            Bfour.setEditable(false);
-            Afour.setEditable(false);
-
-            Efive.setEditable(false);
-            Dfive.setEditable(false);
-            Cfive.setEditable(false);
-            Bfive.setEditable(false);
-            Afive.setEditable(false);
+    int location [][] = new int[5][5];
+    public void emptyGrid(){
+        
+        
+        for (int i = 0; i<=4 ;i++){
+            for(int j = 0;j<=4;j++){
+                location[i][j] = 0;
+            }
+        }
+        
+        enemyGen();
+        
+        
+        
+        
+        
+    }
+    public void enemyGen(){
+        
+        
+        for(int x = 0; x<=4;x++){
+            
+            int randX =(int) Math.round(Math.random()*4+0);
+            int randY =(int) Math.round(Math.random()*4+0);
+            System.out.println("randx"+randX);
+            System.out.println("randy"+randY);
+            
+            
+            //gen coordinates
+            
+            if (location[randX][randY]==0){
+                location[randX][randY] = 1;
+                
+            }
+            else{
+              
+                while(location[randX][randY]!=0){
+                    randX =(int) Math.round(Math.random()*4+0);
+                    randY =(int) Math.round(Math.random()*4+0);
+            
+                if (location[randX][randY]==0){
+                    location[randX][randY] = 1;
+                
+            }
+            }
+            }
+            showEnemies();
+        }//ene of x
+            
     }
     
-    public void clearAndReplace(){
-        Eone.setText("");
-        Done.setText("");
-        Cone.setText("");
-        Bone.setText("");
-        Aone.setText("");
-        Etwo.setText("");
-        Dtwo.setText("");
-        Ctwo.setText("");
-        Btwo.setText("");
-        Atwo.setText("");
-        Ethree.setText("");
-        Dthree.setText("");
-        Cthree.setText("");
-        Bthree.setText("");
-        Athree.setText("");
-        Efour.setText("");
-        Dfour.setText("");
-        Cfour.setText("");
-        Bfour.setText("");
-        Afour.setText("");
-        Efive.setText("");
-        Dfive.setText("");
-        Cfive.setText("");
-        Bfive.setText("");
-        Afive.setText("");
-        int c = 0;
-        
-        
-        if(x[c] == 1 && y[c] == 5){
-           Afive.setText("x");
-           c++;
+    public void showEnemies(){
+        for (int i = 0; i<=4 ;i++){
+            for(int j = 0;j<=4;j++){
+                if(location[i][j]==1){
+                    System.out.println("new");
+                    System.out.println(i);
+                    System.out.println(j);
+                }
+            }
         }
-        if(x[c] == 2 && y[c] == 5){
-           Bfive.setText("x");
-           c++;
-        }
-        if(x[c] == 3 && y[c] == 5){
-           Cfive.setText("x");
-           c++;
-        }
-        if(x[c] == 4 && y[c] == 5){
-           Dfive.setText("x");
-           c++;
-        }
-        if(x[c] == 5 && y[c] == 5){
-           Efive.setText("x");
-           c++;
-        }
-        if(x[c] == 1 && y[c] == 4){
-           Afour.setText("x");
-           c++;
-        }
-        if(x[c] == 2 && y[c] == 4){
-           Bfour.setText("x");
-           c++;
-        }
-        if(x[c] == 3 && y[c] == 4){
-           Cfour.setText("x");
-           c++;
-        }
-        if(x[c] == 4 && y[c] == 4){
-           Dfour.setText("x");
-           c++;
-        }
-        if(x[c] == 5 && y[c] == 4){
-           Efour.setText("x");
-           c++;
-        }
-        if(x[c] == 1 && y[c] == 3){
-           Athree.setText("x");
-           c++;
-        }
-        if(x[c] == 2 && y[c] == 3){
-           Bthree.setText("x");
-           c++;
-        }
-        if(x[c] == 3 && y[c] == 3){
-           Cthree.setText("x");
-           c++;
-        }
-        if(x[c] == 4 && y[c] == 3){
-           Dthree.setText("x");
-           c++;
-        }
-        if(x[c] == 5 && y[c] == 3){
-           Ethree.setText("x");
-           c++;
-        }
-        if(x[c] == 1 && y[c] == 2){
-           Atwo.setText("x");
-           c++;
-        }
-        if(x[c] == 2 && y[c] == 2){
-           Btwo.setText("x");
-           c++;
-        }
-        if(x[c] == 3 && y[c] == 2){
-           Ctwo.setText("x");
-           c++;
-        }
-        if(x[c] == 4 && y[c] == 2){
-           Dtwo.setText("x");
-           c++;
-        }
-        if(x[c] == 5 && y[c] == 2){
-           Etwo.setText("x");
-           c++;
-        }
-        if(x[c] == 1 && y[c] == 1){
-           Aone.setText("x");
-           c++;
-        }
-        if(x[c] == 2 && y[c] == 1){
-           Bone.setText("x");
-           c++;
-        }
-        if(x[c] == 3 && y[c] == 1){
-           Cone.setText("x");
-           c++;
-        }
-        if(x[c] == 4 && y[c] == 1){
-           Done.setText("x");
-           c++;
-        }
-        if(x[c] == 5 && y[c] == 1){
-           Eone.setText("x");
-           c++;
-        }
-        
-        
-        
-
-            
     }
     /**
      * @param args the command line arguments
@@ -1096,86 +342,22 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel A;
-    private javax.swing.JTextField A1;
-    private javax.swing.JTextField A2;
-    private javax.swing.JTextField A3;
-    private javax.swing.JTextField A4;
-    private javax.swing.JTextField A5;
-    private javax.swing.JTextField Afive;
-    private javax.swing.JTextField Afour;
-    private javax.swing.JTextField Aone;
-    private javax.swing.JTextField Athree;
-    private javax.swing.JTextField Atwo;
-    private javax.swing.JLabel B;
-    private javax.swing.JTextField B1;
-    private javax.swing.JTextField B2;
-    private javax.swing.JTextField B3;
-    private javax.swing.JTextField B4;
-    private javax.swing.JTextField B5;
-    private javax.swing.JLabel Bee;
-    private javax.swing.JTextField Bfive;
-    private javax.swing.JTextField Bfour;
-    private javax.swing.JTextField Bone;
-    private javax.swing.JTextField Bthree;
-    private javax.swing.JTextField Btwo;
-    private javax.swing.JLabel C;
-    private javax.swing.JTextField C1;
-    private javax.swing.JTextField C2;
-    private javax.swing.JTextField C3;
-    private javax.swing.JTextField C4;
-    private javax.swing.JTextField C5;
-    private javax.swing.JTextField Cfive;
-    private javax.swing.JTextField Cfour;
-    private javax.swing.JTextField Cone;
-    private javax.swing.JTextField Cthree;
-    private javax.swing.JTextField Ctwo;
-    private javax.swing.JLabel D;
-    private javax.swing.JTextField D1;
-    private javax.swing.JTextField D2;
-    private javax.swing.JTextField D3;
-    private javax.swing.JTextField D4;
-    private javax.swing.JTextField D5;
-    private javax.swing.JLabel Dee;
-    private javax.swing.JTextField Dfive;
-    private javax.swing.JTextField Dfour;
-    private javax.swing.JTextField Done;
-    private javax.swing.JTextField Dthree;
-    private javax.swing.JTextField Dtwo;
-    private javax.swing.JLabel E;
-    private javax.swing.JTextField E1;
-    private javax.swing.JTextField E2;
-    private javax.swing.JTextField E3;
-    private javax.swing.JTextField E4;
-    private javax.swing.JTextField E5;
-    private javax.swing.JLabel Eee;
-    private javax.swing.JTextField Efive;
-    private javax.swing.JTextField Efour;
-    private javax.swing.JLabel Eh;
-    private javax.swing.JTextField Eone;
-    private javax.swing.JTextField Ethree;
-    private javax.swing.JTextField Etwo;
     private javax.swing.JButton Fire;
-    private javax.swing.JLabel HitOrMiss;
     private javax.swing.JLabel Letter;
-    private javax.swing.JTextField LetterIn;
-    private javax.swing.JTextField NumIn;
     private javax.swing.JLabel Number;
-    private javax.swing.JLabel See;
-    private javax.swing.JButton ShipEnter;
-    private javax.swing.JLabel ShipPlacement;
     private javax.swing.JLabel ShotPrompt;
-    private javax.swing.JLabel cinco;
-    private javax.swing.JLabel cuatro;
-    private javax.swing.JLabel dos;
-    private javax.swing.JLabel five;
-    private javax.swing.JLabel four;
+    private javax.swing.JLabel ammoCount;
+    private javax.swing.JTextField column;
+    private javax.swing.JTextArea hits;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel one;
-    private javax.swing.JLabel three;
-    private javax.swing.JLabel tres;
-    private javax.swing.JLabel two;
-    private javax.swing.JLabel uno;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JTextArea misses;
+    private javax.swing.JLabel numShots;
+    private javax.swing.JTextField row;
     // End of variables declaration//GEN-END:variables
 
 }
