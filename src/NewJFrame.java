@@ -13,9 +13,11 @@
 
 public class NewJFrame extends javax.swing.JFrame {
 
-    /** Creates new form NewJFrame */
     public NewJFrame() {
         initComponents();
+        
+        emptyGrid();
+        ammoCount.setText(""+ammoCounter);
     }
 
     /** This method is called from within the constructor to
@@ -34,7 +36,6 @@ public class NewJFrame extends javax.swing.JFrame {
         Letter = new javax.swing.JLabel();
         Number = new javax.swing.JLabel();
         Fire = new javax.swing.JButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
         numShots = new javax.swing.JLabel();
         ammoCount = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -63,21 +64,14 @@ public class NewJFrame extends javax.swing.JFrame {
 
         ShotPrompt.setText("Enter coordinates for shot");
 
-        Letter.setText("Letter");
+        Letter.setText("Row");
 
-        Number.setText("Number");
+        Number.setText("Column");
 
         Fire.setText("Fire");
         Fire.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FireActionPerformed(evt);
-            }
-        });
-
-        jToggleButton1.setText("jToggleButton1");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
             }
         });
 
@@ -133,9 +127,6 @@ public class NewJFrame extends javax.swing.JFrame {
                                             .addComponent(column, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(Fire)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addComponent(jToggleButton1))
-                            .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(ammoCount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -153,15 +144,10 @@ public class NewJFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addComponent(jToggleButton1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -177,14 +163,14 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Fire)
                         .addGap(31, 31, 31)
-                        .addComponent(numShots, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(numShots, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ammoCount, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(198, Short.MAX_VALUE))))
+                        .addContainerGap(197, Short.MAX_VALUE))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(103, 103, 103)
@@ -198,9 +184,10 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     int []y  = new int [6];
     int []x = new int[6];
-    int i = 0;
+    int ammoCounter = 10;
     
-   
+    
+    
    
     
     private void rowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rowActionPerformed
@@ -210,37 +197,89 @@ public class NewJFrame extends javax.swing.JFrame {
     private void columnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_columnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_columnActionPerformed
-
+    
+    int hitsCount, missesCount = 0;
     private void FireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FireActionPerformed
         // TODO add your handling code here:
-        String rowIn = row.getText();
-        int row  = Integer.parseInt(rowIn);
-        String columnIn = column.getText();
-        int column = Integer.parseInt(columnIn);
-        String hitPlaces = "";
-        String missedPlaces = "";
         
-        if(location[row][column] == 1){
+        if(ammoCounter > 1){
             
-            hitPlaces = hitPlaces+"\n"+ row+", "+column+"\n";
-            hits.append(hitPlaces);
+            
+            String rowIn = row.getText();
+            int rowLoc  = Integer.parseInt(rowIn);
+            String columnIn = column.getText();
+            int columnLoc = Integer.parseInt(columnIn);
+            String hitPlaces = "";
+            String missedPlaces = "";
         
-        }
-        else{
-            missedPlaces  = missedPlaces+"\n" +row+", "+column+"\n";
-            misses.append(missedPlaces);
+            if(location[rowLoc][columnLoc] == 1){
+
+                hitPlaces = hitPlaces+"\n"+ rowLoc+", "+columnLoc+"\n";
+                hits.append(hitPlaces);
+                hitsCount++;
+                if (hitsCount>=5){
+                    win();
+                }
+            }
+            else{
+                missedPlaces  = missedPlaces+"\n" +rowLoc+", "+columnLoc+"\n";
+                misses.append(missedPlaces);
+                missesCount++;
+            }
+            ammoCounter--;
+            ammoCount.setText(""+ammoCounter);
+        }else{
+            String rowIn = row.getText();
+            int rowLoc  = Integer.parseInt(rowIn);
+            String columnIn = column.getText();
+            int columnLoc = Integer.parseInt(columnIn);
+            String hitPlaces = "";
+            String missedPlaces = "";
+            if(location[rowLoc][columnLoc] == 1){
+
+                hitPlaces = hitPlaces+"\n"+ rowLoc+", "+columnLoc+"\n";
+                hits.append(hitPlaces);
+                hitsCount++;
+            }
+            else{
+                missedPlaces  = missedPlaces+"\n" +rowLoc+", "+columnLoc+"\n";
+                misses.append(missedPlaces);
+                missesCount++;
+            }
+            endGame();
             
         }
+        
         
         
         
         
     }//GEN-LAST:event_FireActionPerformed
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
-        emptyGrid();
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    public void win(){
+        this.setVisible(false);
+        new NewJFrame2().setVisible(true);
+        
+    }
+    
+    
+    public void endGame(){
+        //code from arjunsk.com "how to send values between 2 jframes in java netbeans
+        double dead;
+        dead = Math.round(Math.random()*2000+500);
+        double killed;
+        killed = dead*missesCount;
+        
+        String info[] = new String[3];
+        info[0] = ""+hitsCount;
+        info[1] = ""+missesCount;
+        info[2] = ""+killed;
+        
+        NewJFrame1.main(info);
+        this.setVisible(false);
+        
+        
+    }
     
 
 
@@ -268,8 +307,8 @@ public class NewJFrame extends javax.swing.JFrame {
             
             int randX =(int) Math.round(Math.random()*4+0);
             int randY =(int) Math.round(Math.random()*4+0);
-            System.out.println("randx"+randX);
-            System.out.println("randy"+randY);
+            //System.out.println("randx"+randX);
+           // System.out.println("randy"+randY);
             
             
             //gen coordinates
@@ -354,7 +393,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JTextArea misses;
     private javax.swing.JLabel numShots;
     private javax.swing.JTextField row;
