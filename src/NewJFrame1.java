@@ -19,7 +19,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
         initComponents();
         hits.setText("You hit: "+text1);
         misses.setText("You Missed: "+text2);
-        killed.setText("Civillians Killed: "+text3);
+        killed.setText("Munitions Factories Destroyed: "+text3);
     }
     static String text1,text2, text3;
     /**
@@ -36,18 +36,19 @@ public class NewJFrame1 extends javax.swing.JFrame {
         hits = new javax.swing.JLabel();
         misses = new javax.swing.JLabel();
         killed = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("You ran out of bombs it seems.  A damn shame if you ask me.");
-
-        jLabel2.setText("Don't worry, we'll have you back out, bombing the krauts in no time at all.");
+        jLabel1.setText("You ran out of bombs it seems.");
 
         hits.setText("You hit:");
 
         misses.setText("You Missed:");
 
-        killed.setText("Civillians killed(approx):");
+        killed.setText("Factories Destroyed:");
+
+        jLabel3.setText("Good on you for not getting shot down though.  Live to fight another day I guess.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -57,11 +58,14 @@ public class NewJFrame1 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3))
                     .addComponent(hits)
                     .addComponent(misses)
                     .addComponent(killed))
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -69,6 +73,8 @@ public class NewJFrame1 extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addGap(37, 37, 37)
                 .addComponent(hits)
@@ -76,7 +82,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
                 .addComponent(misses)
                 .addGap(30, 30, 30)
                 .addComponent(killed)
-                .addContainerGap(321, Short.MAX_VALUE))
+                .addContainerGap(315, Short.MAX_VALUE))
         );
 
         pack();
@@ -128,6 +134,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
     private javax.swing.JLabel hits;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel killed;
     private javax.swing.JLabel misses;
     // End of variables declaration//GEN-END:variables

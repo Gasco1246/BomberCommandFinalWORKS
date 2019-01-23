@@ -201,7 +201,8 @@ public class NewJFrame extends javax.swing.JFrame {
     int hitsCount, missesCount = 0;
     private void FireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FireActionPerformed
         // TODO add your handling code here:
-        
+        row.setText("");
+        column.setText("");
         if(ammoCounter > 1){
             
             
@@ -266,9 +267,9 @@ public class NewJFrame extends javax.swing.JFrame {
     public void endGame(){
         //code from arjunsk.com "how to send values between 2 jframes in java netbeans
         double dead;
-        dead = Math.round(Math.random()*2000+500);
+        dead = Math.round(Math.random()*20+5);
         double killed;
-        killed = dead*missesCount;
+        killed = dead*hitsCount;
         
         String info[] = new String[3];
         info[0] = ""+hitsCount;
