@@ -10,13 +10,16 @@
  */
 
 
-
+import javax.swing.*;
 public class NewJFrame extends javax.swing.JFrame {
-
+    
     public NewJFrame() {
+        
+        startScreen();
         initComponents();
         
         emptyGrid();
+        
         ammoCount.setText(""+ammoCounter);
     }
 
@@ -47,7 +50,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Borg 9", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Courier New", 0, 48)); // NOI18N
         jLabel1.setText("BomberCommand");
 
         row.addActionListener(new java.awt.event.ActionListener() {
@@ -101,20 +104,17 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel4)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(12, 12, 12)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
-                                .addComponent(jLabel4)
-                                .addGap(70, 70, 70))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(29, 29, 29)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(45, 45, 45)
+                                .addGap(43, 43, 43)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(ShotPrompt, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
@@ -127,7 +127,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                             .addComponent(column, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(Fire)))
                             .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(ammoCount, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(numShots, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE))
@@ -138,7 +138,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(22, 22, 22)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(413, Short.MAX_VALUE)))
+                    .addContainerGap(402, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -170,7 +170,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(197, Short.MAX_VALUE))))
+                        .addContainerGap(200, Short.MAX_VALUE))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(103, 103, 103)
@@ -188,7 +188,13 @@ public class NewJFrame extends javax.swing.JFrame {
     
     
     
-   
+   public void startScreen(){
+      
+       //System.out.println("It worked");
+       
+       JOptionPane pane = new JOptionPane();
+       JOptionPane.showMessageDialog(pane,"You are a captain in the RAF\nThanks to the local resistance, the anti-aircraft batteries are under supplied.\nWe know that there are 5 military industial complexes in the target town.\nFortunatley this town is organised in a 5 by 5 grid\nType in your target (row and column numbers ranging from 0-4) to send a bomb there.\nThe targeting system of your plane has a 5 by 5 grid going from coordinates 0 through 4\nYour plane can only hold ten bombs, take care to aim.\nDo try to hit only the military parts of the town.\nGood luck for your mission.  \n");
+   }
     
     private void rowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rowActionPerformed
         // TODO add your handling code here:
@@ -201,8 +207,7 @@ public class NewJFrame extends javax.swing.JFrame {
     int hitsCount, missesCount = 0;
     private void FireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FireActionPerformed
         // TODO add your handling code here:
-        row.setText("");
-        column.setText("");
+        
         if(ammoCounter > 1){
             
             
@@ -212,7 +217,8 @@ public class NewJFrame extends javax.swing.JFrame {
             int columnLoc = Integer.parseInt(columnIn);
             String hitPlaces = "";
             String missedPlaces = "";
-        
+            row.setText("");
+            column.setText("");
             if(location[rowLoc][columnLoc] == 1){
 
                 hitPlaces = hitPlaces+"\n"+ rowLoc+", "+columnLoc+"\n";
@@ -267,7 +273,7 @@ public class NewJFrame extends javax.swing.JFrame {
     public void endGame(){
         //code from arjunsk.com "how to send values between 2 jframes in java netbeans
         double dead;
-        dead = Math.round(Math.random()*20+5);
+        dead = Math.round(Math.random()*5+1);
         double killed;
         killed = dead*hitsCount;
         

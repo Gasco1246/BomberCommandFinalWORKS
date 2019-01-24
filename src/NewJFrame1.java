@@ -82,7 +82,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
                 .addComponent(misses)
                 .addGap(30, 30, 30)
                 .addComponent(killed)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
