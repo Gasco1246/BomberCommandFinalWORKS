@@ -12,15 +12,17 @@
 
 import javax.swing.*;
 public class NewJFrame extends javax.swing.JFrame {
-    
+    /**
+     * intialize the game,
+     */
     public NewJFrame() {
         
-        startScreen();
+        startScreen();//calls the instructions dialog box
         initComponents();
         
-        emptyGrid();
+        emptyGrid();//starts the enemy placement methods
         
-        ammoCount.setText(""+ammoCounter);
+        ammoCount.setText(""+ammoCounter);//sets ammo counter
     }
 
     /** This method is called from within the constructor to
@@ -186,7 +188,9 @@ public class NewJFrame extends javax.swing.JFrame {
     int []x = new int[6];
     int ammoCounter = 10;
     
-    
+    /**
+     * Shows the dialog pane with the instructions
+     */
     
    public void startScreen(){
       
@@ -205,6 +209,11 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_columnActionPerformed
     
     int hitsCount, missesCount = 0;
+    
+    /**
+     * this method takes the inputed coordinates and checks to see if they are hits or misses
+     * @param evt 
+     */
     private void FireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FireActionPerformed
         // TODO add your handling code here:
         
@@ -262,14 +271,14 @@ public class NewJFrame extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_FireActionPerformed
-
+    //end game by displaying the you win screen
     public void win(){
         this.setVisible(false);
         new NewJFrame2().setVisible(true);
         
     }
     
-    
+    //ends the game if you did not win
     public void endGame(){
         //code from arjunsk.com "how to send values between 2 jframes in java netbeans
         double dead;
@@ -289,8 +298,11 @@ public class NewJFrame extends javax.swing.JFrame {
     }
     
 
-
+    
     int location [][] = new int[5][5];
+    /**
+     * Sets all parts of the array to be 0
+     */
     public void emptyGrid(){
         
         
@@ -307,6 +319,10 @@ public class NewJFrame extends javax.swing.JFrame {
         
         
     }
+    /**
+     * 
+     * generates the random placement of the enemies and checks to make sure there are no doubles.
+    */
     public void enemyGen(){
         
         
@@ -340,7 +356,9 @@ public class NewJFrame extends javax.swing.JFrame {
         }//ene of x
             
     }
-    
+    /**
+     * outputs the enemy locations for testing and cheating
+     */
     public void showEnemies(){
         for (int i = 0; i<=4 ;i++){
             for(int j = 0;j<=4;j++){

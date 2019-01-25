@@ -14,7 +14,9 @@ public class NewJFrame1 extends javax.swing.JFrame {
      * Creates new form NewJFrame1
      */
     public NewJFrame1() {
-        
+        /**
+       outputs data from main frame to show end game stats
+        */
         
         initComponents();
         hits.setText("You hit: "+text1);
